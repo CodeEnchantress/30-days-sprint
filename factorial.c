@@ -9,9 +9,9 @@ int factorial(int n) {
 }
 
 int main() {
-    int array[100]; 
+    
     int n;
-
+    int array[n];
     printf("Enter the number of elements: ");
     scanf("%d", &n);
 
