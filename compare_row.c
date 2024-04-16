@@ -18,13 +18,13 @@ int main() {
 
     
     int largestSum = 0;
-     int rowSum = 0;
+     int rowSum = 0; 
     for (int i = 0; i < n; i++) {
-        
+        rowSum = 0;
         for (int j = 0; j < n; j++) {
             rowSum = rowSum+ matrix[i][j];
         }
-        if ( i ==0 ||rowSum > largestSum) {
+        if (rowSum > largestSum) {
             largestSum = rowSum;
         }
     }

@@ -1,7 +1,8 @@
 #include<stdio.h>
-
+#include<stdbool.h>
 int main() {
-    int n, num, flag = 0; 
+    int n, num;
+    bool  flag = false; 
     printf("Enter the size of the array: ");
     scanf("%d", &n);
 
@@ -17,13 +18,15 @@ int main() {
     for (int i = 0; i < n; i++) {
         if (num == arr[i]) {
             printf("Number found at index: %d\n", i);
-            flag = 1;
+            !flag;
             break; // Terminate the loop once the number is found
         }
     }
 
-    if (flag == 0) {
+    if (flag == false) {
+        printf("flag is %d\n", flag);
         printf("Number does not exist\n");
+
     }
 
     return 0;
