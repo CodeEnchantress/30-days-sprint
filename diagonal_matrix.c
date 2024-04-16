@@ -21,7 +21,7 @@ int main() {
         for (int j = 0; j < n; j++) {
             if (i != j && arr[i][j] != 0) {
                 printf("Not a diagonal matrix.\n");
-                return 0; 
+            return 0;
             }
         }
     }
