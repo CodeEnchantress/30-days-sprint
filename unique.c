@@ -25,14 +25,14 @@ int main() {
             for (int k = 0; k < n; k++) {
                 for (int l = 0; l < m; l++) {
                     if ((arr[i][j]==arr[k][l]) && (i!=k ||j!=l)) {
-                        unique = 0; // Found a duplicate
+                        unique = 0; 
                         break;
                     }
                 }
                 if (!unique) break;
             }
             if (unique) {
-                printf("%d ", arr[i][j]); // Print the unique element
+                printf("%d ", arr[i][j]); 
             }
         }
     }
