@@ -1,25 +1,25 @@
-#include <stdio.h>
-#include <string.h>
+#include<stdio.h>
+#include<string.h>
+int main (){
+     char a[20],  b[20], c[40];
+     int i, j;
+     printf("enter the first string\n ");
+     gets(a);
+     printf("enter the second string\n ");
+     gets(b);
+     i=j=0;
+     while(a[i]!='\0'){
 
-int main() {
-    char str1[50], str2[20];
-    int len;
-    
-    printf("Enter the first string: ");
-    fgets(str1, sizeof(str1), stdin);
-    len = strlen(str1);
-    if (str1[len - 1] == '\n')
-        str1[len - 1] = '\0'; 
-    printf("Enter the second string: ");
-    fgets(str2, sizeof(str2), stdin);
-    len = strlen(str2);
-    if (str2[len - 1] == '\n')
-        str2[len - 1] = '\0'; 
-    
-    strcat(str1, " "); 
-    strcat(str1, str2); 
-    
-    printf("Concatenated string: %s\n", str1);
+        c[i]=a[i];
+        i++;
 
-    return 0;
+     }
+     while(b[j]!='\0'){
+
+        c[i]=b[j];
+        i++,j++;
+     }
+     c[i]='\0';
+     printf("the concatenated string is %s", c);
+     return 0;
 }
